@@ -59,12 +59,3 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
-
-## Contacto
-
-- Autor - [Manuel Torres](https://kamilmysliwiec.com)
-- Twitter - [@ualmtorres](https://twitter.com/nestframework)
-
-## Licencia
-
-Este proyecto está bajo la licencia [CC-BY-NC]([LICENSE](https://creativecommons.org/licenses/by-nc/4.0/deed)).

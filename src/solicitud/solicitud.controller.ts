@@ -20,7 +20,7 @@ import { Solicitud } from './entities/solicitud.entity';
 @UseGuards(AuthGuard('jwt'))
 @ApiBearerAuth('access-token')
 export class SolicitudController {
-  constructor(private readonly solicitudService: SolicitudService) {}
+  constructor(private readonly solicitudService: SolicitudService) { }
 
   @Post()
   create(@Body() createSolicitudDto: CreateSolicitudDto): Promise<Solicitud> {
@@ -39,10 +39,10 @@ export class SolicitudController {
 
   @Patch(':id')
   update(
-    @Param('id') id: string,
+    @Param('id') id: number,
     @Body() updateSolicitudDto: UpdateSolicitudDto,
   ): Promise<Solicitud> {
-    return this.solicitudService.update(+id, updateSolicitudDto);
+    return this.solicitudService.update(id, updateSolicitudDto);
   }
 
   @Delete(':id')
