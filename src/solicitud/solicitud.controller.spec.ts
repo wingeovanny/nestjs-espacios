@@ -83,13 +83,17 @@ describe('SolicitudController', () => {
       horaFin: '',
     };
     const solicitudId = 2;
-
+    //valida que permite ingresar un id y el dto para ver si se actualiza correctamente
     expect(controller.update(solicitudId, updateSolicitudDto)).toEqual(
       {
         id: solicitudId,
         ...updateSolicitudDto,
       },
     );
+
+    // valida para si el servicio es llamado con los argumentos correctos por parte del controllador.
+    expect(mockSolicitudService.update).toHaveBeenCalledWith(solicitudId, updateSolicitudDto);
+
   });
 
 

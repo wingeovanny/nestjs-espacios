@@ -4,12 +4,7 @@
 
 ## Descripción
 
-Repositorio de un ejemplo de API de gestión de espacios como material de apoyo del [Tutorial de testing de APIs NestJS](https://ualmtorres.github.io/SeminarioTesting/).
-
----
-**NOTA**
-
-La rama `base` contiene la base del proyecto preparado para poder seguir el tutorial desde cero.
+Repositorio de un ejemplo de API de gestión de espacios con **PRUEBAS UNITARIAS**
 
 ---
 
